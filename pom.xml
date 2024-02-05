@@ -7,6 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<apache.camel.version>3.7.4</apache.camel.version>
+		<apache.activemq.version>5.15.4</apache.activemq.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
@@ -14,6 +15,13 @@
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-core</artifactId>
 			<version>${apache.camel.version}</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.activemq/activemq-camel -->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-camel</artifactId>
+			<version>${apache.activemq.version}</version>
 		</dependency>
 
 	</dependencies>

@@ -22,7 +22,7 @@ public class ConsumerProducerProcessorExample {
 
 						String message = exchange.getIn().getBody(String.class);
 						message = message + " from PROCESSOR";
-						exchange.getOut().setBody(message);
+						exchange.getMessage().setBody(message);
 					}
 				}).to("seda:end");
 			}
